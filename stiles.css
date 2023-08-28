@@ -1,0 +1,25 @@
+
+
+@media handheld, screen and (min-width: 840px) {
+    
+    .pdfs{
+        display: grid;
+    }
+    
+    .imagenes{
+        display: none;
+    }
+
+}
+
+@media handheld, screen and (max-width: 839px) {
+    
+    .pdfs{
+        display: none;
+    }
+    
+    .imagenes{
+        width: 100%;
+    }
+
+}
