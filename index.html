@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stiles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="photho_17_sin_fondo.png">
@@ -32,11 +33,10 @@
         </div>
     </nav>
     <main class="container">
-        <h3 class="hola text-center mt-2 mb-2">CAJA DE CARAYÁ HANDBALL</h3>
-
-        <h4 class="text-center mt-2 mb-2"> A continuación tendremos una tabla ordenada por fecha para observar los movimientos que se hicieron con el dinero del equipo desde el momento que se iniciaron con los recaudos:</h4>
-        
-        <div class="table-responsive">
+        <h3 class="hola text-center mt-4 mb-4">CAJA DE CARAYÁ HANDBALL 🤾‍♂️🤾‍♀️🌈</h3>
+        <h4 class="text-center mt-4 mb-4"> A continuación tendremos una tabla ordenada por fecha para observar los movimientos que se hicieron con el dinero del equipo desde el momento que se iniciaron con los recaudos:</h4>
+        <hr>
+        <div class="table-responsive" style="border-radius: 8px;">
             <table class="table table-bordered text-center">
                 <thead class="table-dark">
                 <tr>
@@ -49,7 +49,7 @@
                     <th class="bi bi-eye"></th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody class="border border-1 border-secondary h6">
                 <tr>
                     <td>Rifas 2022</td>
                     <td>28/09/2022</td>
@@ -125,6 +125,11 @@
                 </tbody>
             </table>
         </div>
+        <div class="text-center mt-2 mb-2">
+            <button type="submit" onclick="botonOk()" class="btn btn-outline-dark">Saludo</button>
+        </div>
+
+
 
         <!-- Modal 1 -->
         <div class="modal" id="myModal1">
@@ -287,6 +292,7 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModalSub">Subdetalle Rifas</button>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
             </div>
 
@@ -350,6 +356,73 @@
             </div>
             </div>
 
+            <!-- Modal 9 Subdetalle Rifas 2023 -->
+        <div class="modal" id="myModalSub">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Subdetalle de las rifas </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <embed class="pdfs" src="pdf/Subdetalle de las Rifas Carayá 8-7-2023.pdf" type="application/pdf" width="100%" height="500px">
+                    <div class="row">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-1.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-2.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-3.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-4.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-5.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-6.png" alt="">
+                        <img class="imagenes" src="img/Subdetalle de las Rifas Carayá 8-7-2023/Subdetalle de las Rifas Carayá 8-7-2023-7.png" alt="">
+                    </div>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+    
+                </div>
+            </div>
+            </div>
+
+
     </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">© 2023 DiegoDavid17</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="nav-link bi bi-instagram" href="https://www.instagram.com/_diego_david_17" target="_blank"> </a></li>
+              <li class="ms-3"><a class="nav-link bi bi-facebook" href="https://www.facebook.com/diego.almiron.7140" target="_blank"> </a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        function botonOk(){
+            Swal.fire({
+            title: 'Gracias Por su atención chiques 🌈🙌🌈',
+            text: 'Les quiere Diego 🥰🥰',
+            width: 1000,
+            padding: '3em',
+            color: '#716add',
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif")
+                left top
+                no-repeat
+            `
+            })
+        }
+    </script>
 </body>
 </html>
