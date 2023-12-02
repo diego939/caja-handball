@@ -124,6 +124,24 @@
                     <td>64133</td>
                     <td><button class="btn btn-outline-dark bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal8"></button></td>
                 </tr>
+                <tr>
+                    <td>Rifa 123 Premios</td>
+                    <td>02/10/2023 </td>
+                    <td>✅</td>
+                    <td></td>
+                    <td>88500</td>
+                    <td>152633</td>
+                    <td><button class="btn btn-outline-dark bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal9"></button></td>
+                </tr>
+                <tr>
+                    <td>Viaje A Salta 2023</td>
+                    <td>12/10/2023</td>
+                    <td></td>
+                    <td>✅</td>
+                    <td>102000</td>
+                    <td>50633</td>
+                    <td><button class="btn btn-outline-dark bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal10"></button></td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -367,7 +385,7 @@
             </div>
             </div>
 
-            <!-- Modal 9 Subdetalle Rifas 2023 -->
+            <!-- Modal Subdetalle Rifas 2023 -->
         <div class="modal" id="myModalSub">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
@@ -402,6 +420,69 @@
             </div>
             </div>
 
+    <!-- Modal 9 -->
+    <div class="modal" id="myModal9">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Rifa 123 Premios</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <embed class="pdfs" src="pdf/Lista Rifas 123 premios - 02-10-2023.pdf" type="application/pdf" width="100%" height="500px">
+                <div class="row">
+                    <img class="imagenes" src="img/Lista Rifas 123 premios - 02-10-2023/Lista Rifas 123 premios - 02-10-2023-1.png" alt="">
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <a href="excel/Lista Rifas 123 premios - 02-10-2023.xlsx" download="Lista Rifas 123 premios - 02-10-2023.xlsx" class="btn btn-success bi bi-file-earmark-spreadsheet-fill"> Descargar en Excel</a>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+    <!-- Modal 10 -->
+    <div class="modal" id="myModal10">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Viaje A Salta 2023</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <embed class="pdfs" src="pdf/Viaje a Salta 12-10-2023.pdf" type="application/pdf" width="100%" height="500px">
+                <div class="row">
+                    <img class="imagenes" src="img/Viaje a Salta 12-10-2023/Viaje a Salta 12-10-2023-1.png" alt="">
+                </div>
+                <hr>
+                <button type="button" class="btn btn-dark m-2" type="submit" onclick="comprobanteSalta1()">comprobante 1</button>
+                <button type="button" class="btn btn-dark m-2" type="submit" onclick="comprobanteSalta2()">comprobante 2</button>
+                <button type="button" class="btn btn-dark m-2" type="submit" onclick="comprobanteSalta3()">comprobante 3</button>
+                <button type="button" class="btn btn-dark m-2" type="submit" onclick="comprobanteSalta4()">comprobante 4</button>
+                <button type="button" class="btn btn-dark m-2" type="submit" onclick="comprobanteSalta5()">comprobante 5</button>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <a href="excel/Viaje a Salta 12-10-2023.xlsx" download="Viaje a Salta 12-10-2023.xlsx" class="btn btn-success bi bi-file-earmark-spreadsheet-fill"> Descargar en Excel</a>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+            </div>
+        </div>
+        </div>
 
     </main>
     <div class="container">
@@ -434,6 +515,41 @@
                 no-repeat
             `
             })
+        }
+
+        function comprobanteSalta1(){
+            Swal.fire({
+                imageUrl: "img/Viaje a Salta 12-10-2023/Comprobante1.jpeg",
+                imageAlt: "Custom image"
+                });
+        }
+
+        function comprobanteSalta2(){
+            Swal.fire({
+                imageUrl: "img/Viaje a Salta 12-10-2023/Comprobante2.jpeg",
+                imageAlt: "Custom image"
+                });
+        }
+
+        function comprobanteSalta3(){
+            Swal.fire({
+                imageUrl: "img/Viaje a Salta 12-10-2023/Comprobante3.jpeg",
+                imageAlt: "Custom image"
+                });
+        }
+
+        function comprobanteSalta4(){
+            Swal.fire({
+                imageUrl: "img/Viaje a Salta 12-10-2023/Comprobante4.jpeg",
+                imageAlt: "Custom image"
+                });
+        }
+
+        function comprobanteSalta5(){
+            Swal.fire({
+                imageUrl: "img/Viaje a Salta 12-10-2023/Comprobante5.jpeg",
+                imageAlt: "Custom image"
+                });
         }
     </script>
 </body>
